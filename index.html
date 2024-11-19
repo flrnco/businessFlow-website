@@ -3,30 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Website</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>BusinessFlow - High Performance Execution</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="Logo" class="logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1 class="logo">BusinessFlow</h1>
+            <nav>
+                <a href="articles.html">Articles</a>
+                <a href="trainings.html">Free Training</a>
+                <a href="#about">About</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <h1>Welcome to My Website</h1>
-        <p>This is a basic example of a website hosted on Amazon S3 and served via CloudFront.</p>
-        <a href="about.html" class="btn">Learn More About Me</a>
-    </main>
+    <section class="hero">
+        <div class="container">
+            <h2>Revolutionize Your Business Execution</h2>
+            <p>Discover a new approach to achieving exceptional performance in business execution with BusinessFlow.</p>
+            <a href="articles.html" class="btn">Read Articles</a>
+            <a href="trainings.html" class="btn btn-secondary">Explore Training</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About BusinessFlow</h2>
+            <p>BusinessFlow is a transformative approach that helps organizations achieve higher performance and efficiency through optimized workflows, strategic alignment, and modern tools.</p>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2024 My Website. All rights reserved.</p>
+        <div class="container">
+            <p>© 2024 BusinessFlow. All rights reserved.</p>
+        </div>
     </footer>
-    <script src="js/script.js"></script>
 </body>
 </html>

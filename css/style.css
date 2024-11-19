@@ -1,59 +1,101 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 header {
-    background-color: #333;
+    background-color: #004d99;
     color: #fff;
-    padding: 20px 10px;
-    text-align: center;
+    padding: 20px 0;
 }
 
-.logo {
-    max-width: 100px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
     margin: 0;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
+header nav {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
 }
 
-nav ul li a {
+header nav a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
 }
 
-main {
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background: linear-gradient(to right, #004d99, #00cc66);
+    color: white;
     text-align: center;
-    padding: 50px 10px;
+    padding: 100px 20px;
 }
 
-main .btn {
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
     display: inline-block;
     padding: 10px 20px;
-    margin-top: 20px;
-    background-color: #007BFF;
-    color: #fff;
+    margin-right: 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: #0073e6;
     text-decoration: none;
     border-radius: 5px;
 }
 
+.hero .btn:hover {
+    background-color: #005bb5;
+}
+
+.hero .btn-secondary {
+    background-color: #00cc66;
+}
+
+.hero .btn-secondary:hover {
+    background-color: #00994d;
+}
+
+.about {
+    padding: 50px 20px;
+    background-color: white;
+    color: #333;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #004d99;
+}
+
 footer {
     background-color: #333;
-    color: #fff;
+    color: white;
     text-align: center;
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    padding: 10px 0;
+    font-size: 0.9rem;
 }
